@@ -1,0 +1,150 @@
+:root {
+    --bg-black: #0a0a0a;
+    --card-bg: #141414;
+    --text-grey: #b0b0b0;
+    --border-grey: #333333;
+    --accent-grey: #666666;
+    --highlight: #ffffff;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-grey);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Contenedor principal */
+.explorer-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-grey);
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+h1 {
+    color: var(--highlight);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--border-grey);
+    margin: 1.5rem 0;
+}
+
+/* Estilo de la lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+a {
+    color: var(--text-grey);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--highlight);
+}
+
+.directory {
+    font-weight: bold;
+    color: var(--highlight);
+}
+
+/* Botón de logout */
+.logout-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-grey);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid var(--border-grey);
+    padding: 5px 15px;
+}
+
+.logout-btn:hover {
+    border-color: var(--highlight);
+    color: var(--highlight);
+}
+
+/* --- NUBE ANIMADA (Misma que el login) --- */
+@keyframes float {
+    0% { transform: translate(-50%, -50%); }
+    50% { transform: translate(-50%, -55%); }
+    100% { transform: translate(-50%, -50%); }
+}
+
+@keyframes cloudFade {
+    from { opacity: 0; }
+    to { opacity: 0.15; }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid var(--border-grey);
+    box-shadow: -120px -100px 0 -10px var(--bg-black), -120px -100px 0 -8px var(--border-grey), 80px -130px 0 -10px var(--bg-black), 80px -130px 0 -8px var(--border-grey);
+    z-index: -1;
+    animation: cloudFade 2s forwards, float 6s ease-in-out infinite;
+}
+
+/* Estilo para los elementos listados (archivos y carpetas) */
+.file-item {
+    padding-left: 30px; /* Esta es la tabulación */
+    border-left: 1px solid var(--border-grey);
+    margin-left: 10px;
+    position: relative;
+}
+
+/* Pequeña línea horizontal para el efecto de rama */
+.file-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 15px;
+    height: 1px;
+    background-color: var(--border-grey);
+}
+
+/* El enlace de volver atrás no debe tener tabulación */
+.back-link {
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.back-link a {
+    color: var(--accent-grey);
+    font-style: italic;
+}

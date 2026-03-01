@@ -1,0 +1,13 @@
+Anoche después de descansar, salimos de fiesta. El problema es que la celebración se nos fue de las manos.
+
+    Me he despertado esta mañana famélico, sin recordar absolutamente nada de lo que ocurrió anoche. El piso está patas arriba, tengo cargos extraños en la cuenta y ni Pablo ni David ni Victoria parecen acordarse de nada.
+
+    Por suerte lo único que conservo es una fotografía de una maravillosa mano que tuvo lugar en la timba especial del reencuentro.
+
+    Tenemos que reconstruir la noche para descubrir qué fue lo que sucedió y con quién acabamos.
+
+    Formato de la flag: clctf{lugar,nombre,1ºapellido}.
+
+    Si el lugar es El Corte Inglés y la persona es Pedro Lomana, la flag será clctf{El_Corte_Inglés,Pedro,Lomana}.
+
+    Nota: Este reto tiene distintas partes. Cuando lleguéis al final lo sabréis. Leed con atención la descripción

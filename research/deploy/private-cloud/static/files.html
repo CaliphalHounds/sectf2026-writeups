@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Explorer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='files.css') }}">
+</head>
+<body>
+    <div class="explorer-container">
+        <h1>Nube Privada: /{{ current_path }}</h1>
+        <hr>
+        <ul>
+            {% if current_path != "" %}
+                <li class="back-link">
+                    <a href="{{ url_for('files_listing', subpath='/'.join(current_path.split('/')[:-1])) }}">
+                        🔙 Atrás
+                    </a>
+                </li>
+            {% endif %}
+
+            {% for item in items %}
+                <li class="file-item">
+                    {% if item.is_dir %}
+                        📁 <a href="{{ url_for('files_listing', subpath=item.rel_path) }}" class="directory">{{ item.name }}/</a>
+                    {% else %}
+                        📄 <a href="{{ url_for('download_file', filename=item.rel_path) }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+        <hr>
+        <a href="/logout" class="logout-btn">Cerrar Sesión</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+:root {
+    --bg-black: #0a0a0a;
+    --card-bg: #141414;
+    --text-grey: #b0b0b0;
+    --border-grey: #333333;
+    --accent-grey: #666666;
+    --highlight: #ffffff;
+    --danger: #ff3333;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-grey);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Centrado del contenedor */
+.auth-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Panel de Login (Card) */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-grey);
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--accent-grey);
+}
+
+/* Título con efecto Glitch */
+.glitch {
+    color: var(--highlight);
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 3px;
+}
+
+/* Inputs y Formulario */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Localiza esta sección en tu login.css */
+label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: var(--highlight);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 100%;
+    background-color: #000;
+    border: 1px solid var(--border-grey);
+    color: var(--highlight);
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--highlight);
+    background-color: #1a1a1a;
+}
+
+/* Botón */
+.btn {
+    background-color: var(--accent-grey);
+    color: var(--bg-black);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--highlight);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Alertas */
+.alert {
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.alert-danger {
+    background-color: rgba(255, 51, 51, 0.1);
+    border-color: var(--danger);
+    color: var(--danger);
+}
+
+/* Animaciones */
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animación Glitch (opcional) */
+.glitch::before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 2px 0 blue;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% { clip: rect(31px, 9999px, 94px, 0); }
+    20% { clip: rect(62px, 9999px, 42px, 0); }
+    100% { clip: rect(10px, 9999px, 85px, 0); }
+}
+/* Animación de flotación */
+@keyframes float {
+    0% { transform: translate(-50%, -50%); }
+    50% { transform: translate(-50%, -55%); }
+    100% { transform: translate(-50%, -50%); }
+}
+
+/* Animación de entrada suave */
+@keyframes cloudFade {
+    from { opacity: 0; }
+    to { opacity: 0.15; }
+}

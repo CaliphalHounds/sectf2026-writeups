@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SEGURIDAD: El fallo masivo de DJI ROMO - La Crónica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/noticias.css') }}">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-black p-4 mb-0">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-white font-black tracking-tighter text-2xl uppercase">La Crónica / <span class="text-blue-400">Domótica</span></span>
+            <a href="/" class="text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-white">← Volver</a>
+        </div>
+    </nav>
+
+    <article class="max-w-6xl mx-auto bg-white p-16 mb-20">
+        <header class="mb-12">
+            <h1 class="font-black leading-none mb-6">Un fallo en el robot DJI ROMO expone 6.700 hogares en todo el mundo</h1>
+            <div class="meta-info">
+                <span>REPORTE: REDACCIÓN CENTRAL</span>
+                <span>FEBRERO 26, 2026</span>
+            </div>
+        </header>
+
+        <div class="mb-12">
+            <div class="news-card p-6 border-t-4 border-slate-900 bg-white shadow-sm block group transition-all duration-300">
+                <div class="w-full h-[500px] bg-slate-100 flex items-center justify-center rounded-sm overflow-hidden mb-6">
+                    <img src="https://www.cleanipedia.com/images/iohqr4whhl17/2r2IXLJBpwJZKsbGRG9wXd/554c5ed50787be5eb014366fb9916cf1/c2h1dHRlcnN0b2NrXzc2Nzk3MzEzOV9hc3BpcmFkLmpwZw/600w/persona-pasando-la-aspiradora-en-el-suelo-de-una-habitaci%C3%B3n..jpg" 
+                         class="max-w-full max-h-full object-cover transition-all duration-500 transform group-hover:scale-105">
+                </div>
+                
+                <span class="text-slate-900 font-bold font-sans text-xs uppercase tracking-widest border-b border-slate-200">
+                    Ciberseguridad / Hogar Conectado
+                </span>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <p class="dropcap font-bold">
+                Lo que comenzó como un experimento casero para controlar una aspiradora con un mando de PS5 terminó revelando una brecha crítica. Sammy Azdoufal, un experto en IA, logró acceder accidentalmente a la actividad de miles de dispositivos DJI ROMO a nivel global, poniendo en jaque la privacidad del hogar conectado.
+            </p>
+
+            <p>
+                Azdoufal no necesitó un ataque sofisticado a los servidores de la compañía. Al realizar ingeniería inversa sobre su propia unidad utilizando la herramienta <strong>Claude Code</strong>, descubrió que los servidores de DJI no validaban correctamente los permisos de los mensajes. En apenas nueve minutos, su sistema detectó 6.700 robots en 24 países.
+            </p>
+
+            <h3>Vigilancia involuntaria</h3>
+            
+            <blockquote>
+                <p>"No hablamos de un electrodoméstico cualquiera, sino de un dispositivo con sensores, cámara y micrófono dentro del hogar".</p>
+            </blockquote>
+
+            <div class="interview-box space-y-6">
+                <p><strong>Privacidad en entredicho:</strong> El protocolo MQTT, estándar en la industria IoT, fue el vehículo de la brecha. Los robots reportaban en tiempo real números de serie, mapas de estancias, recorridos exactos y estados de carga a cualquier usuario que poseyera una credencial válida, sin filtrar si era el dueño legítimo de esos dispositivos específicos.</p>
+
+                <p><strong>La respuesta de DJI:</strong> La compañía reconoció un "problema de validación de permisos de backend" y desplegó dos parches de urgencia entre el 8 y el 10 de febrero. Aunque aseguran que el acceso no autorizado fue "extremadamente raro", el caso ha reabierto el debate sobre cómo se auditan estos sistemas antes de entrar en nuestras casas.</p>
+            </div>
+
+            <br>
+
+            <h3>El precio de la conectividad</h3>
+
+            <p>
+                Tras años dominando los cielos con sus drones, el salto de DJI al suelo doméstico con la línea ROMO ha traído consigo los mismos retos de seguridad que enfrentan otros gigantes tecnológicos. La integración de LiDAR y cámaras para generar mapas precisos convierte a estos robots en plataformas de datos continuos.
+            </p>
+            
+            <p>
+                Este incidente sirve como recordatorio: en el hogar conectado, la comodidad de gestionar la limpieza desde una App tiene un coste potencial en términos de exposición. El "asistente" que limpia tu salón también podría estar abriendo una ventana digital a desconocidos si la infraestructura de la nube falla.
+            </p>
+        </div>
+    </article>
+</body>
+</html>

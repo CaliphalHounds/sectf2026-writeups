@@ -1,0 +1,63 @@
+Hola Adri,
+
+Como ya habrá verificado su equipo de seguridada, su infraestructura ha sido comprometida y sus sistemas de archivos médicos han sido cifrados.
+
+Además de la interrupción operativa, he extraído 500 GB de datos médicos altamente sensibles de sus servidores centrales. No se trata de una vulneración genérica; tenemos en nuestro poder historiales clínicos y registros personales de pacientes y personal facultativo.
+
+Como CISO, usted entiende perfectamente las implicaciones de lo que acaba de ocurrir:
+
+1. Se encuentran bajo jurisdicción de protección de datos de salud. Una filtración de esta magnitud implica multas astronómicas y auditorías que paralizarán su gestión durante años.
+
+2. Entre los archivos extraídos hay diagnósticos y datos de contacto de sus pacientes. Si no llegamos a un acuerdo, estos datos serán vendidos en foros especializados. Conocemos el valor de la información médica en el mercado negro.
+
+3. Tenemos acceso a los contratos gubernamentales y convenios con aseguradoras. Si los datos se filtran, la responsabilidad legal recaerá directamente sobre la dirección del hospital por negligencia en la custodia de datos.
+
+4. Si deciden ignorar este mensaje, procederemos a contactar individualmente a sus directores, jefes de planta y medios de comunicación locales. Tenemos sus números personales y direcciones privadas.
+
+Para mitigar esta crisis y obtener la herramienta de descifrado junto con el certificado de eliminación de los 5 GB de datos, sus directores deben contactarnos inmediatamente.
+
+Contacto: 
+Autenticación: Deben incluir el código #LOU-HOSP-8821 para comenzar la negociación.
+
+Tras el primer contacto, se les proporcionará acceso a un chat seguro y una muestra de los archivos robados como prueba de vida.
+
+Evite involucrar a agencias externas si desea mantener esto de manera confidencial. Cada hora de silencio aumenta el riesgo de publicación.
+
+
+"body": "Hola Adri,<br><br>Como ya habrá verificado su equipo de seguridad, su infraestructura ha sido <strong>comprometida</strong> y sus sistemas de archivos médicos han sido <strong>cifrados</strong>.<br><br>Además de la interrupción operativa, he extraído <strong>500 GB de datos médicos</strong> altamente sensibles de sus servidores centrales. No se trata de una vulneración genérica; tenemos en nuestro poder <strong>historiales clínicos</strong> y registros personales de pacientes y personal facultativo.<br><br>Como CISO, usted entiende perfectamente las implicaciones de lo que acaba de ocurrir:<br><br>1. Se encuentran bajo jurisdicción de protección de datos de salud. Una filtración de esta magnitud implica <strong>multas astronómicas</strong> y auditorías que paralizarán su gestión durante años.<br>2. Entre los archivos extraídos hay diagnósticos y datos de contacto de sus pacientes. Si no llegamos a un acuerdo, estos datos serán <strong>vendidos en foros especializados</strong>. Conocemos el valor de la información médica en el mercado negro.<br>3. Tenemos acceso a los contratos gubernamentales y convenios con aseguradoras. Si los datos se filtran, la <strong>responsabilidad legal</strong> recaerá directamente sobre la dirección del hospital por negligencia en la custodia de datos.<br>4. Si deciden ignorar este mensaje, procederemos a <strong>contactar individualmente a sus directores</strong>, jefes de planta y medios de comunicación locales. Tenemos sus números personales y direcciones privadas.<br><br>Para mitigar esta crisis y obtener la <strong>herramienta de descifrado</strong> junto con el certificado de eliminación de los 5 GB de datos, sus directores deben contactarnos inmediatamente.<br><br>Contacto: <br>Autenticación: Deben incluir el código <strong>#LOU-HOSP-8821</strong> para comenzar la negociación.<br><br>Tras el primer contacto, se les proporcionará acceso a un chat seguro y una <strong>muestra de los archivos robados</strong> como prueba de vida.<br><br><strong>Evite involucrar a agencias externas</strong> si desea mantener esto de manera confidencial. Cada hora de silencio aumenta el riesgo de publicación."
+
+
+--------------------------
+
+URGENTE: Incidente de Ransomware detectado
+
+
+Estimado Adrián Jiménez,
+
+Le escribo para informar de una brecha crítica en nuestra infraestructura detectada hace escasos minutos. Hemos confirmado que la red ha sido víctima de un ataque de ransomware.
+
+El vector de entrada ha sido la estación de trabajo del Doctor. García, que ha sido totalmente comprometida. El atacante ha cifrado varios sistemas de archivos médicos. Le adjunto parte de sus correos.
+
+Nuestro equipo ha logrado aislar el terminal del Dr. García y hemos podido recuperar un volcado de sus archivos que sirven como evidencia del acceso inicial.
+
+He subido toda la evidencia recolectada a nuestro servidor seguro para que el equipo de respuesta a incidentes pueda analizarla de inmediato:
+
+Descargar Evidencia de Intrusión - Archivo Dr. García
+
+Estamos ahora mismo evaluando el alcance del cifrado en los servidores centrales y tratando de contener la propagación. Te mantendré informado de cualquier novedad.
+
+A su vez de forma paralela, estamos en fase de negociación con el cibercriminal.
+
+Saludos,
+
+Óscar Ramírez
+Responsable de Infraestructura
+
+
+"body": "Estimado Adrián Jiménez,<br><br>Le escribo para informar de una <strong>brecha crítica</strong> en nuestra infraestructura detectada hace escasos minutos. Hemos confirmado que la red ha sido víctima de un ataque de <strong>ransomware</strong>.<br><br>El vector de entrada ha sido la estación de trabajo del <strong>Doctor García</strong>, que ha sido totalmente comprometida. El atacante ha cifrado varios sistemas de archivos médicos. <strong>Le adjunto parte de sus correos.</strong><br><br>Nuestro equipo ha logrado aislar el terminal del Dr. García y hemos podido recuperar un volcado de sus archivos que sirven como <strong>evidencia del acceso inicial</strong>.<br><br>He subido toda la evidencia recolectada a nuestro servidor seguro para que el equipo de respuesta a incidentes pueda analizarla de inmediato:<br><br><strong><a href='https://assets.caliphal.com/incident-response/evidence_dr_garcia_dump.zip' style='color: #0a66c2;'>Descargar Evidencia de Intrusión - Archivo Dr. García</a></strong><br><br>Estamos ahora mismo evaluando el alcance del cifrado en los servidores centrales y tratando de contener la propagación. Te mantendré informado de cualquier novedad.<br><br>A su vez de forma paralela, estamos en fase de <strong>negociación con el cibercriminal</strong>.<br><br>Saludos,<br><br><strong>Óscar Ramírez</strong><br>Responsable de Infraestructura"
+
+
+
+
+
+

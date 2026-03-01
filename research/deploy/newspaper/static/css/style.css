@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-blue: #0066FF;
+    --tech-black: #050505;
+    --text-main: #1f2937;
+    --bg-light: #f3f4f6;
+    --border-accent: #e5e7eb;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+/* --- Header & Branding --- */
+header.bg-white {
+    border-bottom: 8px solid var(--tech-black);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -3px;
+}
+
+/* --- News Cards (Main Feed) --- */
+.news-card {
+    border: 1px solid var(--border-accent);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+    border-color: var(--primary-blue);
+}
+
+/* Imagen de la noticia principal */
+.news-card img {
+    filter: grayscale(100%);
+    transition: all 0.6s ease;
+}
+
+.news-card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+/* Tipografía de Titulares en Portada */
+h2, h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--tech-black);
+    text-transform: uppercase;
+}
+
+h2 {
+    letter-spacing: -1px;
+    font-weight: 900;
+}
+
+/* --- Barra Lateral (Última Hora) --- */
+aside h3, .col-span-4 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: var(--tech-black);
+    letter-spacing: 0.1em;
+}
+
+/* Efectos de Hover en noticias laterales */
+.col-span-4 a.news-card {
+    border-left-width: 6px !important;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Detalles Tech --- */
+span.font-bold {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+/* Footer */
+footer {
+    background: var(--tech-black) !important;
+    color: #666;
+    border-top: none;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* --- Animación de entrada --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* --- Ajuste para el Logo del equipo si apareciera en index --- */
+.team-logo-mini {
+    max-width: 150px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.1));
+}

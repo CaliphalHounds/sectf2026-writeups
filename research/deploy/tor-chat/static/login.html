@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tor chat</title>
+    <link rel="stylesheet" href="/static/login.css">
+</head>
+<body>
+    <div class="auth-container fade-in">
+        <div class="card">
+            <div class="glitch" data-text="LOUDEN GROUP">Chat Code</div>
+            
+            <hr>
+
+            {% if error %}
+            <div class="alert alert-danger">
+                >> [ERROR]: {{ error }}
+            </div>
+            {% endif %}
+
+            <form method="POST" action="/auth">
+                <div class="form-group">
+                    <label>Introduce el código de chat:</label>
+                    <input type="text" name="code" placeholder="Código" required autofocus>
+                </div>
+                <button type="submit" class="btn">Acceder al chat</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

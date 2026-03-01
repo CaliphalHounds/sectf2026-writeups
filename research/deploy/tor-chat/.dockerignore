@@ -1,0 +1,4 @@
+tor_data
+Dockerfile
+docker-compose.yml
+deploy.sh

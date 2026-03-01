@@ -1,0 +1,121 @@
+:root {
+    --bg-black: #0a0a0a;
+    --card-bg: #141414;
+    --text-grey: #b0b0b0;
+    --border-grey: #333333;
+    --accent-grey: #666666;
+    --highlight: #ffffff;
+    --danger: #ff3333;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-grey);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-grey);
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--accent-grey);
+}
+
+.glitch {
+    color: var(--highlight);
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: var(--highlight);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 100%;
+    background-color: #000;
+    border: 1px solid var(--border-grey);
+    color: var(--highlight);
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--accent-grey);
+    color: var(--bg-black);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--highlight);
+}
+
+.alert-danger {
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--danger);
+    background-color: rgba(255, 51, 51, 0.1);
+    color: var(--danger);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* NUBE ANIMADA */
+@keyframes float {
+    0%, 100% { transform: translate(-50%, -50%); }
+    50% { transform: translate(-50%, -55%); }
+}
+
+@keyframes cloudFade {
+    from { opacity: 0; }
+    to { opacity: 0.15; }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid var(--border-grey);
+    box-shadow: -120px -100px 0 -10px var(--bg-black), -120px -100px 0 -8px var(--border-grey), 80px -130px 0 -10px var(--bg-black), 80px -130px 0 -8px var(--border-grey);
+    z-index: -1;
+    animation: cloudFade 2s forwards, float 6s ease-in-out infinite;
+}

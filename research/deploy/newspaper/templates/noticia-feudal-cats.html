@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AUGE: Feudal Cats en el Podio Mundial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/noticias.css') }}">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-black p-4 mb-0">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-white font-black tracking-tighter text-2xl uppercase">La Crónica / <span class="text-blue-500">Tech</span></span>
+            <a href="/" class="text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-white">← Volver</a>
+        </div>
+    </nav>
+
+    <article class="max-w-6xl mx-auto bg-white p-16 mb-20">
+        <header class="mb-12">
+            <h1 class="font-black leading-none mb-6">Feudal Cats alcanza el subcampeonato mundial en la GoogleCTF 2025</h1>
+            <div class="meta-info">
+                <span>REPORTE: REDACCIÓN CENTRAL</span>
+                <span>JUNIO 30, 2025</span>
+            </div>
+        </header>
+
+        <div class="mb-12">
+            <div class="news-card p-6 border-t-4 border-blue-900 bg-white shadow-sm block group transition-all duration-300">
+                <img src="{{ url_for('static', filename='images/feudal_cats.jpg') }}" 
+                     class="w-full h-[500px] mb-6 transition-all duration-500 rounded-sm">
+            </div>
+            <span class="text-blue-800 font-bold font-sans text-xs uppercase tracking-widest border-b border-blue-200">
+                Logotipo del equipo
+            </span>
+        </div>
+
+        <div class="content-wrapper">
+            <p class="dropcap font-bold">
+                La ciberseguridad española vive un momento histórico. El equipo Feudal Cats ha logrado la segunda posición en la GoogleCTF 2025, consolidándose como una potencia global tras superar a más de ochocientos combinados internacionales.
+            </p>
+
+            <p>
+                El equipo, liderado por la maestría técnica de <strong>Alberto Sánchez Trujillo</strong> (conocido en la comunidad como <em>Louden</em>), ha contado con una alineación de gala para esta edición. Junto a él, figuras clave como <strong>Eduardo Pérez Fernández</strong> , <strong>Sebastián Rodríguez Simón</strong> y el resto del equipo técnico, ejecutaron una estrategia de resolución de retos impecable.
+            </p>
+
+            <h3>Encuentro con Louden</h3>
+            
+            <blockquote class="">
+                <p>"No se trata solo de resolver retos, también hay que organizar al equipo y contar con buena química".</p>
+            </blockquote>
+
+            <div class="interview-box space-y-6">
+                <p><strong>P: ¿Cuál fue el momento crítico de la final?</strong></p>
+                <p><em>R: Hubo un reto de criptografía cuántica en el último wave. Estuvimos estancados tres horas, pero la capacidad analítica del equipo en su conjunto a las cuatro de la mañana, nos permitió detectar una anomalía en el flujo de generación de claves justo antes del cierre de la competición.</em></p>
+
+                <p><strong>P: ¿Qué significa este resultado para Galicia?</strong></p>
+                <p><em>R: Es la prueba de que el talento local no tiene techo. Hemos pasado de aprender en talleres básicos a tutear equipos internacionales de primer nivel.</em></p>
+            </div>
+
+            <br>
+            <br>
+
+            <h3>El horizonte: Próximos desafíos</h3>
+
+            <br>
+
+            <p>
+                Tras este subcampeonato, el futuro de <strong>Feudal Cats</strong> se proyecta hacia la profesionalización definitiva. El equipo ya ha confirmado su participación en el próximo <em>DefCon 2026</em> y su colaboración estratégica con el Instituto Nacional de Ciberseguridad (INCIBE).
+            </p>
+            
+            <p>
+                El objetivo final está claro: el asalto al primer puesto en la edición de 2026. "La paciencia es el arma más letal", concluye Sánchez Trujillo.
+            </p>
+        </div>
+    </article>
+</body>
+</html>

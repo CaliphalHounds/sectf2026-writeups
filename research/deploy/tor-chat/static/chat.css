@@ -1,0 +1,119 @@
+:root {
+    --bg-black: #0a0a0a;
+    --card-bg: #141414;
+    --text-grey: #b0b0b0;
+    --border-grey: #333333;
+    --accent-grey: #666666;
+    --highlight: #ffffff;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-grey);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.explorer-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-grey);
+    padding: 2.5rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+h1 {
+    color: var(--highlight);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.chat-log {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.chat-log li {
+    padding: 12px 10px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+}
+
+.admin-msg { color: var(--highlight); font-weight: bold; }
+.system-msg { color: #f1c40f; font-style: italic; font-size: 0.85rem; }
+
+.logout-btn {
+    display: inline-block;
+    color: var(--accent-grey);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid var(--border-grey);
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+
+.logout-btn:hover {
+    border-color: var(--highlight);
+    color: var(--highlight);
+}
+
+/* NUBE ANIMADA */
+@keyframes float {
+    0%, 100% { transform: translate(-50%, -50%); }
+    50% { transform: translate(-50%, -55%); }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid var(--border-grey);
+    box-shadow: -120px -100px 0 -10px var(--bg-black), -120px -100px 0 -8px var(--border-grey), 80px -130px 0 -10px var(--bg-black), 80px -130px 0 -8px var(--border-grey);
+    z-index: -1;
+    opacity: 0.15;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Para mantener el formato de árbol de archivos */
+.tree-structure {
+    background-color: #000000;
+    color: #2ecc71; /* Verde terminal */
+    padding: 15px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow-x: auto;
+    border: 1px solid #1a1a1a;
+}
+
+/* Para la imagen del descuido */
+.chat-img-evidence {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--border-grey);
+    margin-top: 15px;
+    cursor: crosshair; /* Sugiere al jugador que debe inspeccionarla */
+}
+
+/* Animación sutil de entrada */
+.fade-in {
+    animation: fadeInAnim 1s ease-in-out;
+}
+
+@keyframes fadeInAnim {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

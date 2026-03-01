@@ -1,0 +1,9 @@
+Todo lo bueno llega a su fin. Tras un fin de semana inolvidable, es hora de volver a la realidad.
+
+Como parte de un pequeño juego de despedida, hemos decidido mantener nuestro destino en secreto. No hay billetes de avión ni ubicaciones compartidas; solo nos hemos repartido unas imágenes peculiares de nuestra ciudad de procedencia.
+
+Como buen investigador, tengo que saber a qué ciudad irán mis amigos.
+
+Formato de la flag: clctf{FotoPablo,FotoDavid,FotoVictoria}.
+
+Si los lugares son Tokyo para Pablo, Santiago de Compostela para David y Berlín para Victoria, la flag será clctf{Tokyo,Santiago_de_Compostela,Berlín}.

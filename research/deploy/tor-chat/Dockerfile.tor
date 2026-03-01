@@ -1,0 +1,6 @@
+FROM alpine:latest
+RUN apk add --no-cache tor
+# Creamos el directorio y damos permisos al usuario tor (100)
+RUN mkdir -p /var/lib/tor/hidden_service && chown -R 100:100 /var/lib/tor/hidden_service
+USER 100
+CMD ["tor", "-f", "/etc/tor/torrc"]

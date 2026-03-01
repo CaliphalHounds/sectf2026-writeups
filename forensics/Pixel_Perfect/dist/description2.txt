@@ -1,0 +1,1 @@
+Una vez entendido mejor el contexto entiende mejor el ataque. ¿Cuándo se infectó? ¿Cómo? Investiga el caso y conseguirás la flag.

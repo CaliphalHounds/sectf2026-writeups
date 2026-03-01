@@ -1,0 +1,11 @@
+Después de más de 4 años sin vernos, hemos decidido escaparnos un fin de semana a Córdoba con nuestros amigos. 
+
+Tiene pinta de que va a ser un fin de semana inolvidable, sobre todo porque después de tanto tiempo por fin podemos echar el rato juntos como en los viejos tiempos.
+
+Victoria ya ha llegado al Airbnb situado en "Huerta de la Marquesa", pero es demasiado graciosa y en vez de pasarme la ubicación por WhatsApp como harían las personas normales, me ha pasado una foto de sus vistas por la ventana.
+
+El viaje me ha aturdido y necesito llegar lo antes posible.
+
+Formato de la flag: clctf{latitud,longitud,planta}.
+
+Si las coordenadas son -48.4705528,44.9939586 y es la 1ª planta, la flag será clctf{-48.4705,44.9939,1} (4 decimales sin redondeos).

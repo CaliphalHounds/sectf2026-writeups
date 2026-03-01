@@ -1,0 +1,4 @@
+clctf{Góngora_Gran_Café,Fermín,Trujillo}
+clctf{Góngora_Gran_Café,Fernando,Tejero}
+clctf{Góngora,Fermín,Trujillo}
+clctf{Góngora,Fernando,Tejero}

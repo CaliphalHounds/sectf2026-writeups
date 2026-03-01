@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+
+    <!-- style.css link  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font awsome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="h-screen flex flex-col md:pb-2 bg-[#f6f9ff] relative">
+
+    <button
+        class="flex md:hidden gap-4 py-4 px-5 items-center bg-sky-200 ml-2 mt-2 rounded-2xl hover:drop-shadow-md absolute bottom-4 right-4"><i
+            class="fa-solid fa-pencil text-xl"></i>
+
+        <p class="text-sm font-semibold">Compose</p>
+
+    </button>
+
+
+
+    <!-- ------------------------- navbar section starts here ---------------------------------- -->
+
+    <nav class="w-full py-2 flex px-4 text-gray-600 justify-between">
+
+
+
+        <!-- navbar left content  -->
+
+        <div class="flex items-center w-[70%] justify-between gap-3">
+
+            <div class="flex gap-1 items-center">
+
+                <button class="h-10 w-10 grid place-content-center rounded-full hover:bg-gray-200"><i
+
+                        class="fa-solid fa-bars text-lg"></i></button>
+
+                <div>
+
+                    <img class="h-9" src="./assets/gmail-logo.png" alt="">
+
+                </div>
+
+            </div>
+
+
+
+            <div
+
+                class=" hidden group md:flex h-full items-center rounded-full p-1 bg-[#e5f1ff] gap-2 w-[80%] max-w-2xl hover:drop-shadow-md hover:bg-white">
+
+                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i
+
+                        class="fa-solid fa-magnifying-glass"></i></button>
+
+                <input class="h-full focus:outline-none bg-[#e5f1ff] py-2 w-full group-hover:bg-white" type="text"
+
+                    name="saerch" id="saerch" placeholder="Buscar correo">
+
+                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i
+
+                        class="fa-solid fa-sliders"></i></button>
+
+            </div>
+
+        </div>
+
+        <!-- navbar left content end here -->
+
+
+
+        <!-- navbar right content  -->
+
+        <div class="flex items-center gap-2">
+
+            <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i
+
+                    class="fa-regular fa-circle-question"></i></button>
+
+            <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i
+
+                    class="fa-solid fa-gear"></i></button>
+
+            <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i
+
+                    class="fa-solid fa-list-ul"></i></button>
+
+            <button class="grid place-content-center rounded-full hover:bg-gray-200 w-7 overflow-hidden"><img
+
+                    src="./assets/my-pic.jpg" alt="manikmaity"></button>
+
+        </div>
+
+        <!-- navbar right content ends here -->
+
+    </nav>
+
+    <!-- ---------------------------- navbar section ends here -----------------------------------  -->
+
+
+
+
+
+
+
+
+
+    <!------------------------------- gmail main section starts here ------------------------------  -->
+
+    <div class="h-full w-full  grid grid-cols-10">
+
+
+
+        <!-- ------------------------- gmail left sidebar starts here --------------------- -->
+
+        <div class="self-start sticky top-0 col-span-2 h-full mr-2 hidden md:block">
+
+            <button class="flex gap-4 py-4 px-5 items-center bg-sky-200 ml-2 mt-2 rounded-2xl hover:drop-shadow-md"><i
+
+                    class="fa-solid fa-pencil text-xl"></i>
+
+                <p class="text-sm font-semibold">Redactar</p>
+
+            </button>
+
+
+
+            <ul class="w-full text-sm my-3">
+
+                <li class="w-full"><a
+
+                        class=" font-semibold w-full flex leading-none bg-blue-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2"
+
+                        href="#"><i class="fa-solid fa-inbox"></i>
+
+                        <p class="flex w-full justify-between">Recibidos <span id="inbox-count">10</span></p>
+
+                    </a></li>
+
+                <li class="w-full"><a
+
+                        class="w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2"
+
+                        href="#"><i class="fa-regular fa-star"></i>
+
+                        <p class="flex w-full justify-between">Destacados</p>
+
+                    </a></li>
+
+                <li class="w-full"><a
+
+                        class="w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2"
+
+                        href="#"><i class="fa-regular fa-clock"></i>
+
+                        <p class="flex w-full justify-between">Pospuestos</p>
+
+                    </a></li>
+
+                <li class="w-full"><a
+
+                        class="w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2"
+
+                        href="#"><i class="fa-regular fa-paper-plane"></i>
+
+                        <p class="flex w-full justify-between">Enviados</p>
+
+                    </a></li>
+
+                <li class="w-full"><a
+
+                        class=" font-semibold w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2"
+
+                        href="#"><i class="fa-regular fa-file"></i>
+
+                        <p class="flex w-full justify-between">Borradores <span class="opacity-60"></span></p>
+
+                    </a></li>
+
+                <li class="w-full"><a
+
+                        class="w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2"
+
+                        href="#"><i class="fa-solid fa-angle-down"></i>
+
+                        <p class="flex w-full justify-between">Más</p>
+
+                    </a></li>
+
+            </ul>
+
+            <div class="flex justify-between py-3 pl-6">
+
+                <p class="text-lg font-semibold">Etiquetas</p>
+
+                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i
+
+                        class="fa-solid fa-plus"></i></button>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- ------------------------- gmail left sidebar ends here --------------------- -->
+
+
+
+
+
+        <!-- ------------------------- gmail right main contents start here -------------------------  -->
+
+        <div class="bg-white h-full col-span-10 md:col-span-8 rounded-2xl mx-2 flex flex-col">
+
+
+
+            <!-- --------------------------sticky section start--------------------  -->
+
+            <div class="bg-white w-full sticky top-0 flex py-2 px-4 text-gray-600 text-[0.7rem] justify-between">
+
+
+
+                <!-- right  -->
+
+                <div class="flex gap-1">
+
+                    <div class="flex gap-1">
+
+                        <input class="py-auto px-2" type="checkbox" name="select" id="select">
+
+                        <button
+
+                            class="grid place-content-center rounded-full hover:bg-gray-200  text-gray-700 px-1 h-full"><i
+
+                                class="fa-solid fa-caret-down"></i></button>
+
+                    </div>
+
+                    <button class="grid place-content-center rounded-full hover:bg-gray-200 p-3"><i
+
+                            class="fa-solid fa-rotate-right"></i></button>
+
+                    <button class="grid place-content-center rounded-full hover:bg-gray-200 py-3 px-4"><i
+
+                            class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                </div>
+
+
+
+                <!-- left  -->
+
+                <div class="flex gap-1">
+
+                    <div class="flex items-center h-full rounded-md px-2 cursor-pointer hover:bg-gray-200">
+
+                        <p>1-50 of 4,814</p>
+
+                    </div>
+
+                    <button class="grid place-content-center rounded-full hover:bg-gray-200 p-3"><i
+
+                            class="fa-solid fa-chevron-left"></i></button>
+
+                    <button class="grid place-content-center rounded-full hover:bg-gray-200 p-3"><i
+
+                            class="fa-solid fa-chevron-right"></i></button>
+
+                </div>
+
+
+
+
+
+            </div>
+
+            <!-- --------------------------sticky section end --------------------  -->
+
+
+
+
+
+
+
+            <!-- ------------------------ Scrolable main section starts here ------------------------  -->
+
+            <div class="scrolable-width overflow-y-scroll overflow-x-hidden">
+
+
+
+                <!-- ----------------- Mail Catergory select Section start--------------------  -->
+
+                <div
+
+                    class="hidden md:flex h-12 text-sm font-medium leading-none text-gray-600 border-b border-gray-200">
+
+                    <button
+
+                        class="flex h-full w-52 items-center px-4 gap-4 text-blue-600 border-b-[3px] border-blue-600">
+
+                        <i class="fa-solid fa-inbox"></i>
+
+                        <p>Principal</p>
+
+                    </button>
+
+
+
+                    <button class="flex h-full w-52 items-center px-4 gap-4 hover:bg-gray-200">
+
+                        <i class="fa-solid fa-receipt"></i>
+
+                        <p>Promociones</p>
+
+                    </button>
+
+
+
+                    <button
+
+                        class="flex h-full w-52 items-center px-4 gap-4 hover:bg-gray-200 overflow-hidden text-ellipsis whitespace-nowrap">
+
+                        <i class="fa-solid fa-receipt"></i>
+
+                        <div class="flex flex-col text-start">
+
+                            <p>Social <span class="text-xs px-1 leading-none bg-blue-600 text-white rounded-full">4
+
+                                    nuevo</span></p>
+
+                            <p class="text-xs font-normal text-gray-400">Facebook, LinkedI, Twit..</p>
+
+                        </div>
+
+                    </button>
+
+
+
+                </div>
+
+                <!-- ----------------- Mail Catergory select Section end --------------------  -->
+
+
+
+                <!-- ------------------------ all mails sections starts here----------------------  -->
+
+                <div id="mail-list" class="flex flex-col h-full">
+
+                </div>
+
+                <div id="mail-view" class="hidden bg-white h-full mx-2 flex flex-col overflow-hidden">
+                    <div class="flex items-center justify-between px-4 py-2 border-b border-gray-100 text-gray-600">
+                        <div class="flex items-center gap-2">
+                            <button id="back-button" class="h-9 w-9 grid place-content-center rounded-full hover:bg-gray-200" title="Back to Inbox">
+                                <i class="fa-solid fa-arrow-left text-sm"></i>
+                            </button>
+                            <div class="h-6 w-[1px] bg-gray-200 mx-2"></div>
+                            <button class="h-9 w-9 grid place-content-center rounded-full hover:bg-gray-200"><i class="fa-solid fa-archive text-sm"></i></button>
+                            <button class="h-9 w-9 grid place-content-center rounded-full hover:bg-gray-200"><i class="fa-solid fa-circle-exclamation text-sm"></i></button>
+                            <button class="h-9 w-9 grid place-content-center rounded-full hover:bg-gray-200"><i class="fa-solid fa-trash text-sm"></i></button>
+                            <div class="h-6 w-[1px] bg-gray-200 mx-2"></div>
+                            <button class="h-9 w-9 grid place-content-center rounded-full hover:bg-gray-200"><i class="fa-solid fa-envelope text-sm"></i></button>
+                            <button class="h-9 w-9 grid place-content-center rounded-full hover:bg-gray-200"><i class="fa-solid fa-clock text-sm"></i></button>
+                        </div>
+                        <div class="flex items-center gap-1 text-xs">
+                            <p>1 of 4,814</p>
+                            <button class="p-2 hover:bg-gray-100 rounded-full"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="p-2 hover:bg-gray-100 rounded-full"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 overflow-y-auto bg-white">
+                        <div class="max-w-5xl ml-20 mr-auto py-8 px-4">
+                            
+                            <div class="flex justify-between items-center mb-8">
+                                <div class="flex items-center gap-4">
+                                    <h2 id="view-subject" class="text-2xl font-normal text-[#202124]"></h2>
+                                </div>
+                                <div class="flex gap-4 text-gray-500 text-sm">
+                                    <button class="hover:bg-gray-100 p-1 rounded"><i class="fa-solid fa-print"></i></button>
+                                    <button class="hover:bg-gray-100 p-1 rounded"><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start justify-between mb-10">
+                                <div class="flex gap-4">
+                                    <div id="view-avatar" class="h-10 w-10 bg-sky-700 rounded-full flex-shrink-0 flex items-center justify-center text-white text-lg font-medium">
+                                        P
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span id="view-sender" class="font-bold text-sm text-[#202124]"></span>
+                                            <span class="text-xs text-[#5f6368]">&lt;<span id="view-email"></span>&gt;</span>
+                                        </div>
+                                        <div class="text-xs text-[#5f6368] flex items-center gap-1 mt-1">
+                                            Para mí <i class="fa-solid fa-caret-down text-[10px]"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 text-[#5f6368]">
+                                    <span id="view-time" class="text-xs"></span>
+                                    <div class="flex gap-1">
+                                        <button class="hover:bg-gray-100 p-2 rounded-full"><i class="fa-solid fa-star text-xs"></i></button>
+                                        <button class="hover:bg-gray-100 p-2 rounded-full"><i class="fa-solid fa-reply text-xs"></i></button>
+                                        <button class="hover:bg-gray-100 p-2 rounded-full"><i class="fa-solid fa-ellipsis-vertical text-xs"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="view-body" class="ml-140 text-sm text-[#3c4043] leading-relaxed whitespace-pre-wrap font-sans">
+                            </div>
+
+                            <div class="mt-24 ml-14 flex gap-3 pb-20">
+                                <button class="flex items-center gap-2 px-6 py-2 border border-[#dadce0] rounded-full text-sm font-medium text-[#5f6368] hover:bg-[#f8f9fa] hover:border-[#d2d2d2] transition-colors">
+                                    <i class="fa-solid fa-reply text-xs"></i> Responder
+                                </button>
+                                <button class="flex items-center gap-2 px-6 py-2 border border-[#dadce0] rounded-full text-sm font-medium text-[#5f6368] hover:bg-[#f8f9fa] hover:border-[#d2d2d2] transition-colors">
+                                    <i class="fa-solid fa-share text-xs"></i> Reenviar
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------------------ all mails sections starts here----------------------  -->
+
+            </div>
+
+            <!-- ------------------------ Scrolable main section ends here ------------------------  -->
+        </div>
+
+        <!-- ------------------------- gmail right main contents ends here -------------------------  -->
+    </div>
+
+    <!------------------------------- gmail main section ends here ------------------------------  -->
+
+    <script>
+        const mailList = document.getElementById('mail-list');
+        const mailView = document.getElementById('mail-view');
+        const backButton = document.getElementById('back-button');
+        const stickySection = document.querySelector('.sticky.top-0');
+        const tabsSection = document.querySelector('.md\\:flex.h-12');
+    
+        // Función para cargar los correos desde el JSON
+        async function loadEmails() {
+            try {
+                const response = await fetch('./emails.json');
+                if (!response.ok) throw new Error('No se pudo cargar el JSON');
+                const emails = await response.json();
+                renderEmails(emails);
+            } catch (error) {
+                console.error('Error cargando los correos:', error);
+                mailList.innerHTML = `<p class="p-4 text-red-500">Error al cargar correos. Asegúrate de usar un servidor local (Live Server).</p>`;
+            }
+        }
+    
+        // Función para pintar los correos en el HTML
+        function renderEmails(emails) {
+            mailList.innerHTML = '';
+            emails.forEach(email => {
+                const mailItem = document.createElement('div');
+                
+                mailItem.className = "mail-item flex h-9 px-2 items-center text-sm border-b border-gray-200 hover:shadow-md cursor-pointer md:py-0 py-6";
+                
+                mailItem.innerHTML = `
+                    <div class="flex text-gray-600 h-full items-center font-normal w-1/5">
+                        <div class="md:grid place-content-center h-full w-8 rounded-full hover:bg-gray-200 hidden">
+                            <input type="checkbox" class="mr-2">
+                        </div>
+                        <button class="md:grid hidden place-content-center rounded-full hover:bg-gray-200 p-2">
+                            <i class="fa-regular fa-star"></i>
+                        </button>
+                        <p class="text-black truncate ml-1 font-bold">${email.sender}</p>
+                    </div>
+                    <div class="flex w-[70%] truncate px-2 items-center">
+                        <p class="font-bold text-black">${email.subject}</p>
+                        <p class="text-gray-500 ml-2 truncate">${email.preview}</p>
+                    </div>
+                    <div class="w-[10%] text-right font-normal text-black">${email.time}</div>
+                `;
+    
+                mailItem.addEventListener('click', (e) => {
+                    if (e.target.tagName === 'INPUT') return;
+                    
+                    mailItem.querySelectorAll('.font-bold').forEach(el => {
+                        el.classList.remove('font-bold');
+                        el.classList.add('font-normal');
+                    });
+
+                    mailItem.style.backgroundColor = "#f2f6fc"; 
+                    
+                    const countBadge = document.getElementById('inbox-count');
+                    let currentCount = parseInt(countBadge.innerText);
+
+                    if (!mailItem.classList.contains('bg-read') && currentCount > 0) {
+                        countBadge.innerText = currentCount - 1;
+                    }
+
+                    openEmail(email);
+                });
+    
+                mailList.appendChild(mailItem);
+            });
+        }
+    
+        // Función para mostrar el detalle del correo
+        function openEmail(email) {
+            document.getElementById('view-subject').innerText = email.subject;
+            document.getElementById('view-sender').innerText = email.sender;
+
+            document.getElementById('view-time').innerText = email.time;
+        
+            document.getElementById('view-email').innerText = email.email; 
+            
+            document.getElementById('view-body').innerHTML = email.body;
+            
+            const avatar = document.getElementById('view-avatar');
+            avatar.innerText = email.sender.charAt(0);
+
+            mailList.classList.add('hidden');
+            stickySection.classList.add('hidden');
+            tabsSection.classList.add('hidden');
+            mailView.classList.remove('hidden');
+        }
+    
+        // Lógica del botón volver
+        backButton.addEventListener('click', () => {
+            mailList.classList.remove('hidden');
+            stickySection.classList.remove('hidden');
+            tabsSection.classList.remove('hidden');
+            mailView.classList.add('hidden');
+        });
+    
+        loadEmails();
+    </script>
+
+</body>
+</html>

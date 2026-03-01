@@ -1,0 +1,25 @@
+services:
+  webapp:
+    build: .
+    container_name: torchat
+    expose:
+      - "13942"
+    networks:
+      - tor-net
+    restart: always
+
+  tor-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.tor
+    container_name: loudentor
+    volumes:
+      - ./tor_data:/var/lib/tor/hidden_service
+      - ./torrc:/etc/tor/torrc:ro
+    networks:
+      - tor-net
+    restart: always
+
+networks:
+  tor-net:
+    driver: bridge
