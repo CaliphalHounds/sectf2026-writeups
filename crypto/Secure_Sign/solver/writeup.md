@@ -128,14 +128,12 @@ Para conseguir esto, es necesario calcular $2^{12} + 1$ firmas, ya que por cada 
 Suponiendo dos mensajes distintos $m_1$ y $m_2$, sean $h_1 = H(m_1)$ y $h_2 = H(m_2)$ y sus firmas $(r_1, s_1)$ y $(r_2, s_2)$. Entonces, se tiene un sistema de dos ecuaciones y dos incógnitas en el que se puede despejar fácilmente $d$
 
 $$
-\begin{align*}
-\left\{
-\begin{align*}
-s_1 = k^{-1} \cdot (h_1 + r_1 \cdot d) \mod{n} \\
-s_2 = k^{-1} \cdot (h_2 + r_2 \cdot d) \mod{n}
-\end{align*} \right\} \Longrightarrow \\ \\
- \Longrightarrow d = (h_1 s_2 - h_2 s_1) \cdot (r_2 s_1 - r_1 s_2)^{-1} \mod{n}
-\end{align*}
+\begin{cases}
+s_1 = k^{-1}(h_1 + r_1 d) \bmod n \\
+s_2 = k^{-1}(h_2 + r_2 d) \bmod n
+\end{cases}
+\Longrightarrow
+d = (h_1 s_2 - h_2 s_1)(r_2 s_1 - r_1 s_2)^{-1} \bmod n
 $$
 
 Para obtener la flag se debe firmar la clave pública con la clave privada asociada $d$ (lo que se conoce como prueba de posesión):
