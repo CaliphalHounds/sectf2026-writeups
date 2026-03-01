@@ -129,7 +129,7 @@ Suponiendo dos mensajes distintos $m_1$ y $m_2$, sean $h_1 = H(m_1)$ y $h_2 = H(
 
 $$
 \begin{align*}
-\left \{
+\left\{
 \begin{align*}
 s_1 = k^{-1} \cdot (h_1 + r_1 \cdot d) \mod{n} \\
 s_2 = k^{-1} \cdot (h_2 + r_2 \cdot d) \mod{n}

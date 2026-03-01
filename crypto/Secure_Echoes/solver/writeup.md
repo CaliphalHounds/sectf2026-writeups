@@ -274,7 +274,7 @@ import requests
 
 url = "http://localhost:3000/"
 USERNAME = "admin"
-PASSWORD = "admin"ç
+PASSWORD = "admin"
 coeffs = [] # LA LISTA DE COEFICIENTES
 messages = [] # LA LISTA DE MENSAJES
 
